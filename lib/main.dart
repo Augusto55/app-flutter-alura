@@ -1,14 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('Transferências'),
-      ),
-      floatingActionButton: FloatingActionButton(
+  runApp(CupertinoApp(
+    home: CupertinoPageScaffold(
+       navigationBar: CupertinoNavigationBar(
+         middle: Text('Transferências'),
+       ),
+      child: CupertinoButton.filled(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: Icon(CupertinoIcons.add),
       ),
     ),
   ));
